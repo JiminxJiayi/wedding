@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIMIN × JIAYI</title>
+    <link rel="icon" href="../pics/icon.ico" />
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./need_Css.css" />
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #photos {
+        position: relative;
+      }
+
+      .posgroup {
+        position: absolute;
+        transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease,
+          background-size 0.3s ease;
+      }
+
+      #photo1 {
+        background-image: url(../pics/black1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        width: 30%;
+        height: 80%;
+        left: 3%;
+      }
+
+      #photo2 {
+        background-image: url(../pics/black2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        top: 6%;
+        left: 32%;
+        width: 30%;
+        height: 80%;
+      }
+
+      #photo3 {
+        background-image: url(../pics/black3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        top: 12%;
+        left: 62%;
+        width: 30%;
+        height: 80%;
+      }
+
+      #photo1:hover {
+        z-index: 2;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #photo2:hover {
+        z-index: 2;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #photo3:hover {
+        z-index: 2;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+
+      /* pd */
+      .posgroup2 {
+        position: absolute;
+        transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease,
+          background-size 0.3s ease;
+      }
+      #pd1 {
+        background-image: url(../pics/blue3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        top: 16%;
+        width: 30%;
+        height: 80%;
+        left: 3%;
+        z-index: 3;
+      }
+
+      #pd2 {
+        background-image: url(../pics/blue2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        top: 8%;
+        left: 32%;
+        width: 30%;
+        height: 80%;
+        z-index: 2;
+      }
+
+      #pd3 {
+        background-image: url(../pics/blue1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        left: 62%;
+        width: 30%;
+        height: 80%;
+        z-index: 1;
+      }
+
+      #pd1:hover {
+        z-index: 4;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #pd2:hover {
+        z-index: 4;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #pd3:hover {
+        z-index: 4;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      /* pdgroup3 */
+      .posgroup3 {
+        position: absolute;
+        transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease,
+          background-size 0.3s ease;
+      }
+      #pd4 {
+        background-image: url(../pics/white1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        width: 30%;
+        height: 80%;
+        left: 3%;
+      }
+
+      #pd5 {
+        background-image: url(../pics/white2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        top: 6%;
+        left: 32%;
+        width: 30%;
+        height: 80%;
+      }
+
+      #pd6 {
+        background-image: url(../pics/white3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(1px);
+        opacity: 0.8;
+        top: 12%;
+        left: 62%;
+        width: 30%;
+        height: 80%;
+      }
+
+      #pd4:hover {
+        z-index: 4;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #pd5:hover {
+        z-index: 4;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #pd6:hover {
+        z-index: 4;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      #newshover {
+        background-color: #f0edebd1;
+        box-shadow: 0 0 5px 5px #f0edebd1;
+      }
+      #newshover:hover {
+        background-color: #dad1ccd1;
+        box-shadow: 0 0 5px 5px #dad1ccd1;
+      }
+
+      .carousel-item img {
+        background-color: #f7e6dfd0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top px-3 py-2"
+      style="background-color: #d7c4bb"
+    >
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a
+          class="navbar-brand ms-md-3 h3"
+          href="./page1.html"
+          style="text-shadow: 1px 1px white, -1px -1px #444"
+        >
+          JIMIN × JIAYI
+        </a>
+
+        <a href="./wedding-mobile.html">
+          <img
+            src="../pics/phone.svg"
+            alt="pc"
+            style="height: 28px"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 50px"></div>
+    <!-- photo -->
+    <div
+      class="d-flex align-items-center"
+      style="
+        background-image: url(../pics/love.jpg);
+        background-position: 0% 85%;
+        background-size: cover;
+        height: 300px;
+      "
+    >
+      <div
+        class="flex-fill"
+        style="background-color: rgba(233, 223, 214, 0.401)"
+      >
+        <br />
+        <p
+          class="text-center h2"
+          style="
+            color: rgb(241, 241, 241);
+            text-shadow: black 0.1em 0.1em 0.2em;
+          "
+        >
+          We're getting married!
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <div id="conceptposition" style="height: 50px"></div>
+    <!-- PIC GROUP1 -->
+    <div class="container-md p-4" style="border-bottom: 1px solid #d7c4bb">
+      <div id="photos" class="row" style="height: 600px">
+        <div id="photo1" class="posgroup col"></div>
+        <div id="photo2" class="posgroup col"></div>
+        <div id="photo3" class="posgroup col"></div>
+        <!-- <div id="clickTo" class="posgroup col">
+          <a href="./page3_concept.html"
+            ><button
+              class="w-100 h-100 text-start fst-italic h2"
+              style="border: 0; background: transparent"
+            >
+              CONCEPT
+            </button></a
+          >
+        </div> -->
+      </div>
+    </div>
+    <!-- PIC GROUP2 -->
+    <div class="container-md p-4" style="border-bottom: 1px solid #d7c4bb">
+      <div id="photos" class="row" style="height: 600px">
+        <div id="pd1" class="posgroup2 col"></div>
+        <div id="pd2" class="posgroup2 col"></div>
+        <div id="pd3" class="posgroup2 col"></div>
+        <!-- <div id="clickTo2" class="posgroup2 col">
+          <a href="./page4_products.html"
+            ><button
+              class="w-100 h-100 text-end fst-italic h2"
+              style="border: 0; background: transparent"
+            >
+              PRODUCTS
+            </button></a
+          >
+        </div> -->
+      </div>
+    </div>
+    <!-- PIC GROUP3 -->
+    <div class="container-md p-4">
+      <div id="photos" class="row" style="height: 600px">
+        <div id="pd4" class="posgroup3 col"></div>
+        <div id="pd5" class="posgroup3 col"></div>
+        <div id="pd6" class="posgroup3 col"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="d-flex pt-2 pb-2 ps-3 pe-4 row"
+      style="background-color: #d7c4bb"
+    >
+      <div class="pb-1">
+        <div class="mt-2">
+          <p
+            class="navbar-brand h4 text-end pe-3"
+            style="text-shadow: 1px 1px white, -1px -1px #444"
+          >
+            ...and they lived happily ever after
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
